@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
+.card {
+  width: 400px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 200px;
+  margin: 20px;
+}
+
+.red {
+  animation: colorchanging 0.6s ease-in forwards;
+}
+@keyframes colorchanging {
+  0% {
+    background-color: rgba(255, 0, 0);
+    transform: rotateZ(90deg);
+  }
+  80% {
+    background-color: rgba(255, 0, 0, 0.4);
+  }
+  99% {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+  100% {
+    background-color: rgba(255, 0, 0, 0);
+  }
+}

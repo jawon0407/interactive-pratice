@@ -8,7 +8,6 @@ let speed = 100;
 let progress = setInterval(() => {
   startValue++;
   containerText.textContent = `${startValue}%`;
-  console.log(startValue);
   container.style.background = `conic-gradient(yellowgreen ${
     startValue * 3.6
   }deg, white 0deg)`;
