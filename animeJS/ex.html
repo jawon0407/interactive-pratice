@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        display: flex;
+      }
+      .common {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 1px solid black;
+      }
+      div {
+        margin: 50px 0;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border-radius: 50%;
+      }
+      .circle2 {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: yellow;
+        position: relative;
+        bottom: -120px;
+        left: 100px;
+      }
+      .com {
+        width: 100px;
+        height: 100px;
+        background-color: wheat;
+        border-radius: 50%;
+        margin-top: 50px;
+      }
+      .commonstyle {
+        width: 100px;
+        height: 100px;
+        background-color: slateblue;
+        border-radius: 50%;
+        margin-top: 50px;
+      }
+      .animation1 {
+        position: relative;
+        top: -400px;
+        left: 600px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: silver;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="common square"></div>
+      <div class="common square2"></div>
+      <div class="common square3"></div>
+      <div class="common square4"></div>
+      <div class="common square5"></div>
+      <div class="common square6"></div>
+    </div>
+    <div>
+      <span class="anime"></span>
+    </div>
+    <div>
+      <form action="#">
+        <input type="text" value="0" />
+      </form>
+    </div>
+    <div>
+      <div class="circle"></div>
+      <div class="circle2"></div>
+    </div>
+    <div>
+      <div class="com circle01"></div>
+      <div class="com circle02"></div>
+      <div class="com circle03"></div>
+      <div class="com circle04"></div>
+      <div class="com circle05"></div>
+    </div>
+    <div>
+      <div class="commonstyle"></div>
+      <div class="commonstyle"></div>
+      <div class="commonstyle"></div>
+      <div class="commonstyle"></div>
+      <div class="commonstyle"></div>
+    </div>
+    <div>
+      <div class="animation1"></div>
+    </div>
+    <script src="./lib/anime.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -2,17 +2,18 @@ const number = document.querySelectorAll(".number");
 const bfNum = document.querySelector(".bf_num");
 const afNum = document.querySelector(".af_num");
 const total = document.querySelector(".total");
-const cancel = document.querySelector(".backspace")
-const operator = document.querySelectorAll(".operator")
-const displayNumber = document.querySelectorAll(".display span")
+const cancel = document.querySelector(".backspace");
+const operator = document.querySelectorAll(".operator");
+const displayNumber = document.querySelectorAll(".display span");
 const operatorSign = document.querySelector(".operator_sign")
+const recordText =  document.querySelector(".record_text");
 let resultNum = document.querySelector(".result_num");
 let change = false;
 
 
 number.forEach((i)=>{
     i.addEventListener("click",()=>{
-        if(change === false){
+        if(change === false){ 
             bfNum.innerHTML += i.innerHTML; 
         }else{
             afNum.innerHTML += i.innerHTML;
@@ -45,10 +46,14 @@ total.addEventListener("click",()=>{
         afNum.innerHTML = '';
 
     }
+    recordText.innerHTML = bfNum.innerHTML + operatorSign.innerHTML + afNum.innerHTML;
     bfNum.innerHTML = resultNum.innerHTML;
     operatorSign.innerHTML = '';
     afNum.innerHTML = '';
 })
+
+
+
 
 cancel.addEventListener("click",()=>{
     console.log(displayNumber);
