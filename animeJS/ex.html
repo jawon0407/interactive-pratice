@@ -56,6 +56,17 @@
         border-radius: 50%;
         background-color: silver;
       }
+      .stagger {
+        position: relative;
+        top: -400px;
+        left: 600px;
+      }
+      .stagger div {
+        width: 50px;
+        height: 50px;
+        background-color: gold;
+        margin: 10px;
+      }
     </style>
   </head>
   <body>
@@ -95,6 +106,14 @@
     </div>
     <div>
       <div class="animation1"></div>
+    </div>
+    <div class="stagger">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
     <script src="./lib/anime.min.js"></script>
     <script src="./index.js"></script>

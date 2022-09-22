@@ -4,7 +4,19 @@
 anime({
   targets: ".square",
   width: "400px",
-  backgroundColor: "#FFF",
+  rotate: {
+    value: "1turn",
+    duration: 500,
+    delay: 2000,
+  },
+  backgroundColor: {
+    value: "#006eb6",
+    duration: 2000,
+  },
+  opacity: {
+    value: "0.1",
+    duration: 1500,
+  },
   duration: 2000,
   direction: "alternate",
   endDelay: 1000,
@@ -12,7 +24,7 @@ anime({
   loop: true,
 });
 
-//target = value
+//target = input, value
 
 anime({
   targets: "input",
@@ -131,7 +143,7 @@ anime
     loop: true,
   })
   .add({ targets: ".circle01", translateX: 200 }, 0)
-  .add({ targets: ".circle02", translateX: 300 }, 1000)
+  .add({ targets: ".circle02", translateX: 300 }, "-=200")
   .add({ targets: ".circle03", translateX: 400 }, 0)
   .add({ targets: ".circle04", translateX: 500 }, 2000)
   .add({ targets: ".circle05", translateX: 600 }, 1000);
@@ -159,7 +171,7 @@ anime({
     {
       translateX: 100,
       rotate: function () {
-        return anime.random(0, 360);
+        return anime.random(0, 90);
         //keyframes 안에서 anime.random 사용하면 새로고침 하기 전까진 같은 값이 나옴
       },
     },
@@ -171,4 +183,18 @@ anime({
   easing: "easeInOutSine",
   direction: "alternate",
   loop: true,
+});
+
+//stagger
+
+anime({
+  targets: ".stagger div",
+  translateX: 200,
+  delay: anime.stagger(400, {
+    easing: "easeInQuad",
+    direction: "reverse",
+  }),
+  direction: "alternate",
+  loop: true,
+  endDelay: 1000,
 });
