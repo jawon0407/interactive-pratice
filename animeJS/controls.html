@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .control div {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        border: 1px solid black;
+        margin: 20px;
+      }
+      button {
+        padding: 20px 40px;
+        border-radius: 20px;
+        font-size: 30px;
+        background-color: slateblue;
+        border: 1px solid blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="control">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div>
+      <button class="play">play</button>
+      <button class="pause">pause</button>
+      <button class="restart">restart</button>
+    </div>
+    <script src="./lib/anime.min.js"></script>
+    <script src="./controls.js"></script>
+  </body>
+</html>
